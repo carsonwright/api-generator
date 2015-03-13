@@ -1,0 +1,25 @@
+name: "My Awesome Api"
+
+data:
+  users:
+    params:
+      first_name: String
+      last_name: String
+      email: String
+      password: String
+      password_confirmation: String
+    fields:
+      use_params_for_fields: true
+      encrypted_password: string
+    validations:
+      first_name: 
+        - unique
+        - present
+  goals:
+    params:
+      definition: String
+      honest: String
+      plate: String
+      space_id: Integer
+    fields:
+      use_params_for_fields: true
